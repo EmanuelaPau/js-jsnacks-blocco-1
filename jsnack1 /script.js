@@ -30,8 +30,12 @@ for (let i = 0; i < 10; i++) {
 
 console.log(numbersList);
 
-let sum;
+let mySum = 0;
 
 for (let i = 0; i < 10; i++) {
-
+    myNumber = parseInt(numbersList[i]);
+    console.log(myNumber)
+    mySum = mySum + myNumber;
 }
+
+console.log(`The sum of your numbers is ${mySum}`);
