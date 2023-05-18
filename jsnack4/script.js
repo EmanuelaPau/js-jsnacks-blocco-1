@@ -23,3 +23,6 @@ console.log(yourNumber);
 
 yourNumber = String(yourNumber);
 console.log(typeof (yourNumber))
+
+yourNumber = yourNumber.charAt(1);
+console.log(yourNumber)
