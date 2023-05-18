@@ -30,4 +30,8 @@ for (let i = 0; i < 10; i++) {
 
 console.log(numbersList);
 
-let sum; 
+let sum;
+
+for (let i = 0; i < 10; i++) {
+
+}
