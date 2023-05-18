@@ -10,3 +10,13 @@ console.log("Hello!");
 // somma le cifre 
 
 let yourNumber = prompt('give me a 4 digits number!')
+
+if (isNaN(yourNumber)) {
+    alert('please write a number!');
+    throw new Error("Something went badly wrong! Write a number!");
+} else if (yourNumber.length !== 4) {
+    alert('please write a 4 digits!');
+    throw new Error("Something went badly wrong! Wrong number!");
+}
+
+console.log(yourNumber);
