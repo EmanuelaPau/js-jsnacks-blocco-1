@@ -15,33 +15,48 @@ console.log("Hello! Snack 2. Can you enter the party?");
 let guestsList = ["pippo", "pippi", "peppa", "peppo", "pluto", 'paperino', 'paperina', 'topolino', 'topolina', 'riccardo', 'antonio', 'stefano', 'elisabetta', 'marta', 'qui', 'quo', 'qua', 'cip', 'ciop'];
 console.log(guestsList);
 
-let yourName = prompt('Hello! Let me check id you are invited. Write here your name');
-console.log(yourName);
+// let yourName = prompt('Hello! Let me check id you are invited. Write here your name');
+// console.log(yourName);
 
-let verifyName = false;
-let listLength = guestsList.length;
-console.log(listLength);
 
-for (let i = 0; i < listLength; i++) {
-    // console.log(listName);
-    if (guestsList[i] === yourName) {
-        verifyName = true;
+let button = document.querySelector('button');
+let input = document.querySelector('input');
+
+button.addEventListener('click', function () {
+
+
+    let yourName = input.value;
+    console.log(yourName);
+
+    let listLength = guestsList.length;
+    console.log(listLength);
+
+    let verifyName = false;
+
+    for (let i = 0; i < listLength; i++) {
+        // console.log(listName);
+        if (guestsList[i] === yourName) {
+            verifyName = true;
+        }
+        console.log(verifyName)
     }
-    console.log(verifyName)
-}
 
-if (verifyName === true) {
-    let output = document.querySelector('main')
-    output.innerHTML +=
-        `<p class="fw-bold text-center">
-    You are on the list! Welcome to the party.
-    </p>`
-    console.log(`You are on the list! Welcome to the party.`)
-} else {
-    let output = document.querySelector('main')
-    output.innerHTML +=
-        `<p class="fw-bold text-center">
-        You are not on the list! Please go away
-    </p>`
-    console.log(`You are not on the list! Please go away`)
-}
+    if (verifyName === true) {
+        let output = document.querySelector('main')
+        output.innerHTML +=
+            `<p class="fw-bold text-center">
+        You are on the list! Welcome to the party.
+        </p>`
+        console.log(`You are on the list! Welcome to the party.`)
+    } else {
+        let output = document.querySelector('main')
+        output.innerHTML +=
+            `<p class="fw-bold text-center">
+            You are not on the list! Please go away
+        </p>`
+        console.log(`You are not on the list! Please go away`)
+    }
+})
+
+
+
