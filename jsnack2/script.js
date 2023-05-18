@@ -15,3 +15,5 @@ console.log("Hello! Snack 2. Can you enter the party?");
 let guestsList = ["pippo", "pippi", "peppa", "peppo", "pluto", 'paperino', 'paperina', 'topolino', 'topolina', 'riccardo', 'antonio', 'stefano', 'elisabetta', 'marta', 'qui', 'quo', 'qua', 'cip', 'ciop'];
 
 let yourName = prompt('Hello! Let me check id you are invited. Write here your name');
+
+let verifyName = false;
