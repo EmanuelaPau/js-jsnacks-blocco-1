@@ -12,4 +12,6 @@ console.log("Hello! Snack 2. Can you enter the party?");
 // se la variabile e' true stampo un puo' entrare 
 // se e' false stampo non puo entrare 
 
-let guestsList = ["pippo", "pippi", "peppa", "peppo", "pluto", 'paperino', 'paperina', 'topolino', 'topolina', 'riccardo', 'antonio', 'stefano', 'elisabetta', 'marta', 'qui', 'quo', 'qua', 'cip', 'ciop']
+let guestsList = ["pippo", "pippi", "peppa", "peppo", "pluto", 'paperino', 'paperina', 'topolino', 'topolina', 'riccardo', 'antonio', 'stefano', 'elisabetta', 'marta', 'qui', 'quo', 'qua', 'cip', 'ciop'];
+
+let yourName = prompt('Hello! Let me check id you are invited. Write here your name');
