@@ -23,5 +23,7 @@ let listLength = guestsList.length;
 console.log(listLength);
 
 for (let i = 0; i < listLength; i++) {
-    console.log(i);
+    if ((guestsList[i]).value === yourName) {
+        verifyName = true;
+    }
 }
