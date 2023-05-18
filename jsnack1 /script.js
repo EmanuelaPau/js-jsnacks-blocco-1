@@ -25,5 +25,7 @@ let numbersList = [];
 
 for (let i = 0; i < 10; i++) {
     let myNumber = prompt(`${i} tell me a number`);
-    console.log(myNumber);
+    numbersList.push(myNumber);
 }
+
+console.log(numbersList);
