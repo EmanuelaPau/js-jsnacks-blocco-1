@@ -17,4 +17,6 @@ for (i = 0; i < 6; i++) {
         evenNumber.push(myNumber);
     }
 }
+let p = document.querySelector('p')
+p.innerHTML = `This are your even numbers: ${evenNumber}`
 console.log(evenNumber);
