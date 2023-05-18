@@ -29,4 +29,6 @@ for (i = 0; i < 4; i++) {
     yourNumberSum = yourNumberSum + newNumber;
 }
 
+let p = document.querySelector('p');
+p.innerHTML = `your number digits sum is ${yourNumberSum}`;
 console.log(`your number digits sum is ${yourNumberSum}`);
