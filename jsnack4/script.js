@@ -5,6 +5,8 @@ console.log("Hello!");
 
 // aggiungi una variabile e chiedi con il prompt un numero di 4 cifre 
 // verifica che il numero sia di 4 cifre
-    // se la variabile.lenght === 4, allora prosegui. se no manda errore e richiedi
+// se la variabile.lenght === 4, allora prosegui. se no manda errore e richiedi
 // prendi singole cifre ???? 
 // somma le cifre 
+
+let yourNumber = prompt('give me a 4 digits number!')
