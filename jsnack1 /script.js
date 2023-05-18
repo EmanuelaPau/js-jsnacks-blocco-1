@@ -21,5 +21,8 @@ console.log("Hello!");
 // 3. stampo la somma 
 //3.1 richiamo la mia variabile somma
 
-let numbersList = ["pippo", "paperina"];
-console.log(numbersList);
+let numbersList = [];
+
+for (let i = 0; i <= 10; i++) {
+    console.log(i);
+}
