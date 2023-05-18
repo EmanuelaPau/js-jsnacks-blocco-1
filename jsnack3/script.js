@@ -13,5 +13,8 @@ console.log("Hello!");
 let evenNumber = []
 for (i = 0; i < 6; i++) {
     let myNumber = prompt('tell me a number');
-
+    if (myNumber % 2 === 0) {
+        evenNumber.push(myNumber);
+    }
 }
+console.log(evenNumber);
