@@ -10,4 +10,8 @@ console.log("Hello!");
 // se il modulo di 2 del numero === a 0 allora e' pari e allora aggiungo il numero all'array (array.push)
 // stampo l'array per verifica
 
-let numeriPari = []
+let evenNumber = []
+for (i = 0; i < 6; i++) {
+    let myNumber = prompt('tell me a number');
+
+}
