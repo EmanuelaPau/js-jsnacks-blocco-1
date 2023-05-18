@@ -23,7 +23,15 @@ let listLength = guestsList.length;
 console.log(listLength);
 
 for (let i = 0; i < listLength; i++) {
-    if ((guestsList[i]).value === yourName) {
+    // console.log(listName);
+    if (guestsList[i] === yourName) {
         verifyName = true;
     }
+    console.log(verifyName)
+}
+
+if (verifyName === true) {
+    console.log(`You are on the list! Welcome to the party.`)
+} else {
+    console.log(`You are not on the list! Please go away`)
 }
