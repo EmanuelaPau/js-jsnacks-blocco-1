@@ -24,8 +24,10 @@ console.log("Hello!");
 let numbersList = [];
 
 for (let i = 0; i < 10; i++) {
-    let myNumber = ;
+    let myNumber = prompt(`${i} tell me a number`);
     numbersList.push(parseInt(myNumber));
 }
 
 console.log(numbersList);
+
+let sum; 
