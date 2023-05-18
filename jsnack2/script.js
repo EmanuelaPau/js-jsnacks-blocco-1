@@ -13,7 +13,15 @@ console.log("Hello! Snack 2. Can you enter the party?");
 // se e' false stampo non puo entrare 
 
 let guestsList = ["pippo", "pippi", "peppa", "peppo", "pluto", 'paperino', 'paperina', 'topolino', 'topolina', 'riccardo', 'antonio', 'stefano', 'elisabetta', 'marta', 'qui', 'quo', 'qua', 'cip', 'ciop'];
+console.log(guestsList);
 
 let yourName = prompt('Hello! Let me check id you are invited. Write here your name');
+console.log(yourName);
 
 let verifyName = false;
+let listLength = guestsList.length;
+console.log(listLength);
+
+for (let i = 0; i < listLength; i++) {
+    console.log(i);
+}
