@@ -25,7 +25,15 @@ let numbersList = [];
 
 for (let i = 0; i < 10; i++) {
     let myNumber = prompt(`${i} tell me a number`);
-    numbersList.push(parseInt(myNumber));
+    if (isNaN(myNumber)) {
+        let myText = document.querySelector('main');
+        myText.innerHTML +=
+            `<p class="text-center fw-bold text-danger">
+            write a number
+            </p>`;
+        throw new Error('write a number');
+    }
+    console.log(typeof (myNumber));
 }
 
 console.log(numbersList);
