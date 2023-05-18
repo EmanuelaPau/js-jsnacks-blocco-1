@@ -20,9 +20,13 @@ if (isNaN(yourNumber)) {
 }
 
 console.log(yourNumber);
-
 yourNumber = String(yourNumber);
-console.log(typeof (yourNumber))
+yourNumberSum = 0;
 
-yourNumber = yourNumber.charAt(1);
-console.log(yourNumber)
+for (i = 0; i < 4; i++) {
+    newNumber = parseInt(yourNumber.charAt(i));
+    console.log(`Tis is the ${i} digit of your Number: ${newNumber}`)
+    yourNumberSum = yourNumberSum + newNumber;
+}
+
+console.log(`your number digits sum is ${yourNumberSum}`);
