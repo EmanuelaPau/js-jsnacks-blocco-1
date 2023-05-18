@@ -4,7 +4,7 @@ console.log("Hello!");
 // Il programma stampa la somma di tutti i numeri inseriti.
 
 
-// 1. chiedo per 10 volte il numero attraverso il prompt 
+// 1. chiedo per 10 volte il numero attraverso il prompt
 // 1.1 creo un array dove storare i numeri
 // 1.2 creo un ciclo for che duri 10 volte
 // 1.3 dentro al ciclo for aggiungo un prompt dove chiedo all'utente un numero
@@ -18,8 +18,8 @@ console.log("Hello!");
 // 2.3 lo sommo alla variabile somma
 
 
-// 3. stampo la somma 
-//3.1 richiamo la mia variabile somma
+// 3. stampo la somma
+// 3.1 richiamo la mia variabile somma
 
 let numbersList = [];
 
@@ -38,4 +38,10 @@ for (let i = 0; i < 10; i++) {
     mySum = mySum + myNumber;
 }
 
+
+let myText = document.querySelector('main');
+myText.innerHTML +=
+    `<p class="text-center fw-bold">
+    The sum of your numbers is ${mySum}
+    </p>`;
 console.log(`The sum of your numbers is ${mySum}`);
