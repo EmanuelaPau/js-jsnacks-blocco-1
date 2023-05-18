@@ -31,7 +31,17 @@ for (let i = 0; i < listLength; i++) {
 }
 
 if (verifyName === true) {
+    let output = document.querySelector('main')
+    output.innerHTML +=
+        `<p class="fw-bold text-center">
+    You are on the list! Welcome to the party.
+    </p>`
     console.log(`You are on the list! Welcome to the party.`)
 } else {
+    let output = document.querySelector('main')
+    output.innerHTML +=
+        `<p class="fw-bold text-center">
+        You are not on the list! Please go away
+    </p>`
     console.log(`You are not on the list! Please go away`)
 }
