@@ -20,3 +20,6 @@ if (isNaN(yourNumber)) {
 }
 
 console.log(yourNumber);
+
+yourNumber = String(yourNumber);
+console.log(typeof (yourNumber))
