@@ -18,7 +18,6 @@ console.log(guestsList);
 // let yourName = prompt('Hello! Let me check id you are invited. Write here your name');
 // console.log(yourName);
 
-
 let button = document.querySelector('button');
 let input = document.querySelector('input');
 

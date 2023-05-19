@@ -10,13 +10,13 @@ console.log("Hello!");
 // se il modulo di 2 del numero === a 0 allora e' pari e allora aggiungo il numero all'array (array.push)
 // stampo l'array per verifica
 
-let evenNumber = []
+let oddNumber = []
 for (i = 0; i < 6; i++) {
     let myNumber = prompt('tell me a number');
-    if (myNumber % 2 === 0) {
-        evenNumber.push(myNumber);
+    if (myNumber % 2 === 1) {
+        oddNumber.push(myNumber);
     }
 }
-let p = document.querySelector('p')
-p.innerHTML = `This are your even numbers: ${evenNumber}`
+let p = document.querySelector('p');
+p.innerHTML = `This are your odd numbers: ${oddNumber}`;
 console.log(evenNumber);
