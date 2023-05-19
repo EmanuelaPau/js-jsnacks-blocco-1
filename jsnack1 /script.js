@@ -64,7 +64,7 @@ let mySum = 0;
 for (let i = 0; i < 10; i++) {
     let myNumber = prompt(`${i} tell me a number`);
 
-    if (isNaN(myNumber)) {
+    if (isNaN(parseInt(myNumber))) {
         let myText = document.querySelector('main');
         myText.innerHTML +=
             `<p class="text-center fw-bold text-danger">
@@ -75,7 +75,8 @@ for (let i = 0; i < 10; i++) {
 
     myNumber = parseInt(myNumber);
     console.log(myNumber)
-    mySum = mySum + myNumber;
+    // mySum = mySum + myNumber;
+    mySum += myNumber;
 }
 
 let myText = document.querySelector('main');
