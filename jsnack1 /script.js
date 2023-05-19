@@ -21,7 +21,45 @@ console.log("Hello!");
 // 3. stampo la somma
 // 3.1 richiamo la mia variabile somma
 
-let numbersList = [];
+// let numbersList = [];
+
+// for (let i = 0; i < 10; i++) {
+//     let myNumber = prompt(`${i} tell me a number`);
+
+//     if (isNaN(myNumber)) {
+//         let myText = document.querySelector('main');
+//         myText.innerHTML +=
+//             `<p class="text-center fw-bold text-danger">
+//             write a number
+//             </p>`;
+//         throw new Error('write a number');
+//     }
+//     console.log(typeof (myNumber));
+//     numbersList.push(myNumber);
+// }
+
+// console.log(numbersList);
+
+// let mySum = 0;
+
+// for (let i = 0; i < 10; i++) {
+//     myNumber = parseInt(numbersList[i]);
+//     console.log(myNumber)
+//     mySum = mySum + myNumber;
+// }
+
+
+// let myText = document.querySelector('main');
+// myText.innerHTML +=
+//     `<p class="text-center fw-bold">
+//     The sum of your numbers is ${mySum}
+//     </p>`;
+// console.log(`The sum of your numbers is ${mySum}`);
+
+
+// Simplify cicle 
+
+let mySum = 0;
 
 for (let i = 0; i < 10; i++) {
     let myNumber = prompt(`${i} tell me a number`);
@@ -34,20 +72,11 @@ for (let i = 0; i < 10; i++) {
             </p>`;
         throw new Error('write a number');
     }
-    console.log(typeof (myNumber));
-    numbersList.push(myNumber);
-}
 
-console.log(numbersList);
-
-let mySum = 0;
-
-for (let i = 0; i < 10; i++) {
-    myNumber = parseInt(numbersList[i]);
+    myNumber = parseInt(myNumber);
     console.log(myNumber)
     mySum = mySum + myNumber;
 }
-
 
 let myText = document.querySelector('main');
 myText.innerHTML +=
